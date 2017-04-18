@@ -1,6 +1,6 @@
 /* Usually there are 3 parts in a header file
 	the first part is data structure definition,
-	the second part is a list of defined constants,
+	the second part is a list of defined constants
 	the third part is a list of functions prototype */
 
 // data structure definition
