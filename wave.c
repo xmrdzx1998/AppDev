@@ -86,7 +86,7 @@ void dispWAVdata(short int s[]){
 #ifdef DEBUG //conditional compiling
 		printf("%2d: %10.2f ",i, rms200);
 #else 
-	//display vertical bars 
+	//display vertical bar
 	displayBar(i+1, rms200);
 #endif
 	}
