@@ -7,7 +7,7 @@ $(APPNAME) : $(OBJ)
 %.o : %.c
 	gcc -c -o $@ $< -std=c99
 
-clean : 
+clean: 
 	rm $(OBJ) $(APPNAME)
 archive:
 	tar cf wave.tar *.c *.h makefile
