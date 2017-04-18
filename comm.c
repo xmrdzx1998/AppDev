@@ -7,7 +7,7 @@ void send_data(double leq[]){
 	CURL *curl;
 	CURLcode res;
 	int i;
-	// prepare the post data
+	// prepare the post data.
 	for(i=0; i<8; i++){
 		sprintf(temp, "%.2f;", leq[i]);
 		strcat(postdata, temp);

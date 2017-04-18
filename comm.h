@@ -1,7 +1,7 @@
 // header file for communication module
 
 #define COMM
-#define URL "http://www.cc.puv.fi/~e1601142/raspsound.php"
+#define URL "http://www.cc.puv.fi/~e1601129/raspsound.php"
 
-// function propotype
+// function propotype.
 void send_data(double []);

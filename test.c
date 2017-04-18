@@ -9,7 +9,7 @@ int main(void){
 	curl_global_init(CURL_GLOBAL_ALL);	// global initiate libcurl
 	curl = curl_easy_init();		// create a curl handler
 	if(curl){	// if handler is ok
-			// set URL and postdate
+			// set URL and postdate.
 			curl_easy_setopt(curl, CURLOPT_URL, "http://www.cc.puv.fi/~e1601142/test.php");
 			while(1){
 			printf("Username: "); scanf("%s", uname);

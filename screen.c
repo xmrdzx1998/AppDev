@@ -8,7 +8,7 @@ void clearScreen(void){
 }
 void setFGcolor(int fg){	// fg is a value between 30 and 37
 	printf("\033[%d;1m", fg);
-	fflush(stdout);		// send out the escape sequence to terminal
+	fflush(stdout);		// send out the escape sequence to terminal.
 }
 
 void resetColors(void){

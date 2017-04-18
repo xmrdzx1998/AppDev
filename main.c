@@ -6,7 +6,7 @@
 #include <stdlib.h>
 int main(int argc, char *argv[]){
 	WAVHDR h;
-	FILE *fp;	// file handler of wave file
+	FILE *fp;	// file handler of wave file.
 	int ans, ret;
 	short int sa[SAMPLE_RATE];
 /*	if(argc<2){	// command line argument should contain wave file name

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "wave.h"	// user-defined header
+#include "wave.h"	// user-defined header.
 #include <math.h>
 #include "screen.h"
 
