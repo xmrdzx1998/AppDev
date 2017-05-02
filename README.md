@@ -1,4 +1,4 @@
-# This is my readme file
+# Github link: https://github.com/xmrdzx1998/AppDev
 # test
 # AppDev
 Raspberry Pi acoustic sensor project 
@@ -7,9 +7,9 @@ This project will turn a raspberry Pi 3 into an acoustic sensor
 
 1. Configuration
 
-1.1 Hardware configuration
+	1.1 Hardware configuration
 
-A raspberry Pi 3 is recommended. If an older version of Pi is used, corresponding configuration might be changed.
+		A raspberry Pi 3 is recommended. If an older version of Pi is used, corresponding configuration might be changed.
 
 the Pi is mounted with a USB sound card, and plugged in a microphone.
 
