@@ -46,10 +46,12 @@ This project will turn a raspberry Pi 3 into an acoustic sensor
 	 	3) Run “sudo aptitude versions alsa-utils” to check if version 1.0.25 of alsa-util is available:
 	 	4) Run “sudo apt-get install alsa-utils=1.0.25-4” to downgrade
 	 	5) Reboot
+
 2. Installation instruction:
-	Step 1: Type command "make" to compile the application
-	Step 2: Type "./wave.a" to run the program and start recording	
-	Step 3: To stop the program, press Ctrl + C
+	
+		Step 1: Type command "make" to compile the application
+		Step 2: Type "./wave.a" to run the program and start recording	
+		Step 3: To stop the program, press Ctrl + C
 
 3. List of files include:
 		README.md
@@ -61,6 +63,8 @@ This project will turn a raspberry Pi 3 into an acoustic sensor
 		comm.c	
 		screen.h 
 		screen.c 
+
 4.Contact information: 
 		Name: Pham Vu		Tel: +358469405433	Email: phamlongvu6969@gmail.com
+
 5.Credit and acknowledgement: This project uses Raspberry Pi 3 and is made by following the instruction of Doctor Gao Chao, VAMK.
