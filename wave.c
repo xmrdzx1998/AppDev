@@ -2,6 +2,7 @@
 #include "wave.h"	// user-defined header.
 #include <math.h>
 #include "screen.h"
+#include "comm.h"
 
 // function definition
 void printID(char s[]){
@@ -72,22 +73,31 @@ void dispWAVHDR(WAVHDR h){
 }
 
 void dispWAVdata(short int s[]){
-	int i,j;
+	int i, j;
 	double sum200, rms200;
-	for(i=0; i<80; i++)
-	{
-		sum200 = 0.0;
-		for(j=0; j<SAMPLE_RATE/80; j++)
-		{
-			sum200 +=  (*s)*(*s);
+	// the following variables are used to calculate short Leq
+	double Leq[8], sum8 = 0.0;
+
+	for(i=0; i<80; i++){	// outer loop for 80 times
+		sum200=0.0;	// initiate accumuater for 200 samples
+		for(j=0;j<SAMPLE_RATE/80;j++){
+			sum200+=(*s)*(*s);	// calculate square sum
 			s++;
 		}
-		rms200 = sqrt(sum200/200);
-#ifdef DEBUG //conditional compiling
-		printf("%2d: %10.2f ",i, rms200);
-#else 
-	//display vertical bars
+		sum8 += sum200;	// accumulate current sum200 to sum8
+		if(i%10==9){	// if we have done accumulation 10 times
+			Leq[i/10] = sqrt(sum8/SAMPLE_RATE/8);	// calculate RMS of 2000 samples
+			sum8 = 0.0;	// reset sum8 for next Leq value
+		}
+		rms200=sqrt(sum200/200);	// calculate RMS of 200
+#ifdef DEBUG	// conditional compiling
+		printf("%2d: %10.2f", i, rms200);
+#else
+	// display vertical bars
 	displayBar(i+1, rms200);
 #endif
-	}
+	}	// end of for(i)
+#ifdef COMM
+	send_data(Leq);
+#endif
 }
