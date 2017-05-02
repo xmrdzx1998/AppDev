@@ -54,6 +54,7 @@ This project will turn a raspberry Pi 3 into an acoustic sensor
 		Step 3: To stop the program, press Ctrl + C
 
 3. List of files include:
+
 		README.md
 		makefile
 		main.c	
@@ -64,7 +65,8 @@ This project will turn a raspberry Pi 3 into an acoustic sensor
 		screen.h 
 		screen.c 
 
-4.Contact information: 
+4. Contact information: 
+
 		Name: Pham Vu		Tel: +358469405433	Email: phamlongvu6969@gmail.com
 
-5.Credit and acknowledgement: This project uses Raspberry Pi 3 and is made by following the instruction of Doctor Gao Chao, VAMK.
+5. Credit and acknowledgement: This project uses Raspberry Pi 3 and is made by following the instruction of Doctor Gao Chao, VAMK.
