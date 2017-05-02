@@ -66,7 +66,6 @@ This project will turn a raspberry Pi 3 into an acoustic sensor
 		screen.c 
 
 4. Contact information: 
-
 		Name: Pham Vu		Tel: +358469405433	Email: phamlongvu6969@gmail.com
 
 5. Credit and acknowledgement: This project uses Raspberry Pi 3 and is made by following the instruction of Doctor Gao Chao, VAMK.
